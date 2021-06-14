@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+header span{
+    display: none;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    color: #017143;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p{
+    color: #333;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+    max-width: 340px;
+}   
+
+.thumb {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;  
+    transition: 0.5s;
+}
+
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 60px;
+}
+
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    display: inline-block;
+    margin: 5px  0;
+    transform: scale(0.6);
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.sci li a:hover{
+    transform: scale(0.6) translateX(-15px);
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+.circle-l{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(400px at left 1000px);
+}
+
+.text-center{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Sign Up page */
+.signup-cont{
+    width: 25%;
+    padding: 50px 0;
+}
+
+.signup-cont h1{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.signup-cont h5{
+    font-weight: bold;
+}
+
+.signup-cont .form-group label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.signup-cont .form-group .form-control{
+    font-size: 14px;
+    padding: 20px 15px;
+}
+
+.signup-cont p{
+    font-size: 13px;
+}
+
+.signup-cont .btn-signup{
+    color: #ffffff;
+    background-color: #017143;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 50px;
+}
+
+.signup-cont .btn-signup:hover{
+    color: #ffffff;
+    background-color: #017142e5;
+}
+
+/* Overlay */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.75); 
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block; 
+    transition: 0.3s; 
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #017143;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* Menu Page */
+.content-menu{
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    padding: 25px 150px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    grid-column-gap: 25px;
+    padding: 10px;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+}
+
+.grid-item {
+    font-size: 30px;
+    text-align: center;
+    min-height: 0;
+    min-width: 0;
+}
+
+.grid-item img {
+    padding: 15px;
+    height: 250px;
+}
+
+.collapsible {
+    background-color: #1168a9;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #00aa63;
+}
+
+.col-content {
+    padding: 5px 15px;
+    display: none;
+    overflow: hidden;
+    font-size: 14px;
+    width:fit-content;
+    background-color: #00bd6e;
+    color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+/* Media */
+@media screen and (max-height: 500px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (max-width: 768px) { 
+    header span{
+        display: block;
+    }
+    
+    header ul{
+        display: none;
+    }
+}
